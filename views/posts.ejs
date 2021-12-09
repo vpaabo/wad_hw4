@@ -1,37 +1,33 @@
-<!-- SETUP FROM PRACTICE SESSION
-app.get('/posts', (req, res) => {
-    let posts = [
-        {title: "First post!", body: "Ya'harr mateys!"},
-        {title: "Inspectorrr's Rrrrreview", body: "It be a fine codin'!"},
-        {title: "Poseidon take ye!", body: "What? Ye be piratin' posts now?"},
-        {title: "Wrrrong timeline?", body: "Yeeeeeeehaaarrrrrrrrrr!"},
-        {title: "So, ye boy looked up peggin'..", body: "Wait, what're you doing with me pegleg?"},
-        {title: "Did I miss a memo?", body: "Uhh.. What's up with all the pirate talk?"}
-    ];
-    res.render('posts', { posts: posts });
-});
--->
+<html lang="en">
 <head>
-    <link href="/src/public/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Posts page</title>
 </head>
 <body>
     <%- include('./partials/header.ejs') %>
-
-    <div class="posts_list">
-        <h2>All posts</h2>
-        <% if (posts.length > 0) { %>
-            <% posts.forEach(post => { %>
+    <div class="posts list">
+    <h2>All posts</h2>
+    <% if (posts.length > 0) { %>
+        <% posts.forEach(post => { %>
+            <a class="singlepost" href="/singlepost/<%= post.id %>">
+                <span>
+                    <%= post.username %>
+                </span>
+                <% if (posts.postcontent !== 'undefined') { %>
+                    <img alt="" src= <%= post.postcontent %> />
+                <% } %>
                 <h3 class="title">
-                    <%= post.title %>
+                    <%= post.caption %>
                 </h3>
-                <p class="body">
-                    <%= post.body %>
-                </p>
-            <% }) %>
-        <% } else { %>
-            <h3 class="title">Arrrgh! The booty's been plundered!</h3>
-        <% } %>
+            </a>
+        <% }) %>
+    <% } else { %>
+        <p>You did not post anything...</p>
+    <% } %>
     </div>
-    
     <%- include('./partials/footer.ejs') %>
 </body>
+</html>

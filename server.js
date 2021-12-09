@@ -10,8 +10,8 @@ const server = http.createServer((req, res) => {
         case '/posts':
             path += 'posts.ejs';
             break;
-        case '/contactus':
-            path += 'contactus.ejs';
+        case '/addnewpost':
+            path += 'addnewpost.ejs';
             break;
         default:
             path += '404.ejs';
