@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/vpaabo/wad_hw4/issues"
   },
-  "homepage": "https://github.com/vpaabo/wad_hw4#readme"
+  "homepage": "https://github.com/vpaabo/wad_hw4#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  }
 }
