@@ -1,0 +1,12 @@
+2021-12-09 13:33:38.445 EET [19296] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-09 13:33:38.446 EET [19296] LOG:  listening on IPv6 address "::", port 5432
+2021-12-09 13:33:38.446 EET [19296] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-09 13:33:38.483 EET [13420] LOG:  database system was shut down at 2021-12-09 13:25:29 EET
+2021-12-09 13:33:38.557 EET [19296] LOG:  database system is ready to accept connections
+2021-12-09 13:36:26.851 EET [19296] LOG:  received fast shutdown request
+2021-12-09 13:36:26.858 EET [19296] LOG:  aborting any active transactions
+2021-12-09 13:36:26.858 EET [20220] FATAL:  terminating connection due to administrator command
+2021-12-09 13:36:26.858 EET [12284] FATAL:  terminating connection due to administrator command
+2021-12-09 13:36:26.882 EET [19296] LOG:  background worker "logical replication launcher" (PID 9896) exited with exit code 1
+2021-12-09 13:36:26.883 EET [13716] LOG:  shutting down
+2021-12-09 13:36:26.952 EET [19296] LOG:  database system is shut down
