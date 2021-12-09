@@ -1,0 +1,12 @@
+<!--usage 'how-to' in app.js:
+app.get('/contactus', (req, res) => {
+    res.render('contactus', { title: "Contact us at: 555-HOWS-MY-CODING"});
+});
+-->
+<body>
+    <%- include('./partials/header.ejs') %>
+
+    <h1><%= title %></h1>
+
+    <%- include('./partials/footer.ejs') %>
+</body>

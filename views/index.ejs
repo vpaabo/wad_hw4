@@ -1,0 +1,12 @@
+<!--usage 'how-to' in app.js:
+app.get('/', (req, res) => {
+    res.render('index', { title: "Welcome!"});
+});
+-->
+<body>
+    <%- include('./partials/header.ejs') %>
+
+    <h1><%= title %></h1>
+    
+    <%- include('./partials/footer.ejs') %>
+</body>
