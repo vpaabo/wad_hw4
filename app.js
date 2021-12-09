@@ -1,19 +1,19 @@
 const express = require('express');
-const pool = require('./database');
-const cors = require('cors');
+//const pool = require('./database');
+//const cors = require('cors');
 const app = express();
 // register the ejs view engine
 app.set('view engine', 'ejs');
 //without this middleware, we cannot use data submitted by forms
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
 app.use(express.static('Public'));
 app.listen(3000, () => {
     console.log("Server is listening to port 3000")
 });
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index',{title: 'Welcome to our page'});
 });
 app.get('/posts', async(req, res) => {
     try {
