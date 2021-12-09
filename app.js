@@ -70,8 +70,8 @@ app.post('/posts', async(req, res) => {
         const post = req.body;
         console.log(post);
         const newpost = await pool.query(
-            "INSERT INTO public.posts(id,caption,username,postcontent,likes,timestamp) VALUES (DEFAULT, $1, $2, $3, $4,$5)
-        RETURNING*", [post.id, post.caption, post.username, post.postcontent, post.like, post.timestamp]
+            "INSERT INTO public.posts(id,caption,username,postcontent,likes,timestamp) VALUES (DEFAULT, $1, $2, $3, $4,$5) RETURNING*",
+            [post.id, post.caption, post.username, post.postcontent, post.like, post.timestamp]
     );
         res.redirect('posts');
     } catch (err) {
