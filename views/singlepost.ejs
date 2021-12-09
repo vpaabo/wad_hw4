@@ -11,15 +11,18 @@
 <body>
     <%- include('./partials/header.ejs') %>
         <div class="singlepost">
-            <h2>
-                <%= posts.content %>
-            </h2>
-            <div class="content">
-                <p>
-                    <%= posts.body %>
-                </p>
-            </div>
-            <a class="delete" data-del="<%= posts.id %>">Delete</a>
+            <span>
+                <%= posts.username %>
+            </span><br>
+            <a>
+                <% if (posts.postcontent !== 'undefined') { %>
+                    <img alt="" src= <%= posts.postcontent %> />
+                <% } %>
+                <h3 class="title">
+                    <%= posts.caption %>
+                </h3>
+                <a class="delete" data-del="<%= posts.id %>">Delete</a>
+            </a>
         </div>
         <script>
             const delreq = document.querySelector('a.delete');
