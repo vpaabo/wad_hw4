@@ -14,7 +14,7 @@
             <span>
                 <%= posts.username %>
             </span><br>
-            <a>
+            <div>
                 <% if (posts.postcontent !== 'undefined') { %>
                     <img alt="" src= <%= posts.postcontent %> />
                 <% } %>
@@ -22,7 +22,7 @@
                     <%= posts.caption %>
                 </h3>
                 <a class="delete" data-del="<%= posts.id %>">Delete</a>
-            </a>
+            </div>
         </div>
         <script>
             const delreq = document.querySelector('a.delete');
@@ -37,3 +37,8 @@
 </body>
 
 </html>
+<style >
+    a:hover {
+        background-color: blue;
+    }
+</style>
