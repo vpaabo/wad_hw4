@@ -3,15 +3,34 @@ app.use((req, res) => {
     res.status(404).render('404', { title: "This page does not exist."});
 });
 -->
-<body>
-    <%- include('./partials/header.ejs') %>
-    
-    <h1><%= title %></h1>
 
-    <%- include('./partials/footer.ejs') %>
+<body>
+    <header>
+        <%- include('./partials/header.ejs') %>
+    </header>
+    <h1>
+        <%= title %>
+    </h1>
+
+    <footer>
+        <%- include('./partials/footer.ejs') %>
+    </footer>
 </body>
 <style>
     body {
         background-color: #466bcf;
+    }
+    header{
+        position: relative;
+        left: 40%;
+    }
+    h1 {
+        position: relative;
+        left: 37%;
+    }
+    footer {
+        position: relative;
+        left: 22.5%;
+        
     }
 </style>
