@@ -1,0 +1,16 @@
+2021-12-12 12:41:57.314 EET [12492] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-12 12:41:57.315 EET [12492] LOG:  listening on IPv6 address "::", port 5432
+2021-12-12 12:41:57.315 EET [12492] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-12 12:41:57.374 EET [9400] LOG:  database system was shut down at 2021-12-12 12:41:47 EET
+2021-12-12 12:41:57.409 EET [12492] LOG:  database system is ready to accept connections
+2021-12-12 12:47:40.988 EET [8688] FATAL:  database "posts" does not exist
+2021-12-12 12:50:11.738 EET [7996] ERROR:  relation "posts" does not exist at character 15
+2021-12-12 12:50:11.738 EET [7996] STATEMENT:  SELECT * FROM posts
+2021-12-12 12:51:33.054 EET [12348] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-12 12:57:16.280 EET [7324] FATAL:  database "posts" does not exist
+2021-12-12 13:04:52.089 EET [12492] LOG:  could not open file "postmaster.pid": No such file or directory
+2021-12-12 13:04:52.089 EET [12492] LOG:  performing immediate shutdown because data directory lock file is invalid
+2021-12-12 13:04:52.089 EET [12492] LOG:  received immediate shutdown request
+2021-12-12 13:04:52.090 EET [12492] LOG:  could not open file "postmaster.pid": No such file or directory
+2021-12-12 13:04:52.108 EET [12492] LOG:  database system is shut down
