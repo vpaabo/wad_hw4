@@ -1,0 +1,13 @@
+2021-12-10 19:04:21.828 EET [5704] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-10 19:04:21.830 EET [5704] LOG:  listening on IPv6 address "::", port 5432
+2021-12-10 19:04:21.831 EET [5704] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-10 19:04:21.839 EET [5704] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:04:21.949 EET [15324] LOG:  database system was interrupted while in recovery at 2021-12-10 19:03:30 EET
+2021-12-10 19:04:21.949 EET [15324] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
+2021-12-10 19:04:22.695 EET [15324] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:04:22.697 EET [15324] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:04:22.698 EET [15324] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-12-10 19:04:22.710 EET [15324] FATAL:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:04:22.717 EET [5704] LOG:  startup process (PID 15324) exited with exit code 1
+2021-12-10 19:04:22.717 EET [5704] LOG:  aborting startup due to startup process failure
+2021-12-10 19:04:22.721 EET [5704] LOG:  database system is shut down

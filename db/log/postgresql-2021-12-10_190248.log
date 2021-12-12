@@ -1,0 +1,11 @@
+2021-12-10 19:02:48.205 EET [932] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-10 19:02:48.207 EET [932] LOG:  listening on IPv6 address "::", port 5432
+2021-12-10 19:02:48.208 EET [932] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-10 19:02:48.216 EET [932] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:02:48.355 EET [17772] LOG:  database system was interrupted; last known up at 2021-12-09 15:57:19 EET
+2021-12-10 19:02:49.255 EET [17772] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:02:49.257 EET [17772] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:02:49.258 EET [17772] FATAL:  could not open directory "pg_twophase": No such file or directory
+2021-12-10 19:02:49.283 EET [932] LOG:  startup process (PID 17772) exited with exit code 1
+2021-12-10 19:02:49.283 EET [932] LOG:  aborting startup due to startup process failure
+2021-12-10 19:02:49.286 EET [932] LOG:  database system is shut down

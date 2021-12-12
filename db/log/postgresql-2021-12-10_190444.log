@@ -1,0 +1,14 @@
+2021-12-10 19:04:44.875 EET [8764] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-10 19:04:44.877 EET [8764] LOG:  listening on IPv6 address "::", port 5432
+2021-12-10 19:04:44.877 EET [8764] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-10 19:04:44.996 EET [19048] LOG:  database system was interrupted while in recovery at 2021-12-10 19:04:22 EET
+2021-12-10 19:04:44.996 EET [19048] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
+2021-12-10 19:04:45.875 EET [19048] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-12-10 19:04:45.882 EET [19048] LOG:  could not open directory "pg_snapshots": No such file or directory
+2021-12-10 19:04:45.883 EET [19048] LOG:  redo starts at 0/175EC40
+2021-12-10 19:04:45.883 EET [19048] LOG:  invalid record length at 0/175ED28: wanted 24, got 0
+2021-12-10 19:04:45.883 EET [19048] LOG:  redo done at 0/175ECF0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2021-12-10 19:04:45.892 EET [19048] FATAL:  could not open directory "pg_logical/snapshots": No such file or directory
+2021-12-10 19:04:45.915 EET [8764] LOG:  startup process (PID 19048) exited with exit code 1
+2021-12-10 19:04:45.915 EET [8764] LOG:  aborting startup due to startup process failure
+2021-12-10 19:04:45.918 EET [8764] LOG:  database system is shut down

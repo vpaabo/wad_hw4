@@ -1,0 +1,9 @@
+2021-12-11 18:09:49.479 EET [17972] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-11 18:09:49.482 EET [17972] LOG:  listening on IPv6 address "::", port 5432
+2021-12-11 18:09:49.483 EET [17972] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-11 18:09:49.603 EET [6784] LOG:  database system was interrupted; last known up at 2021-12-10 19:10:59 EET
+2021-12-11 18:09:50.563 EET [6784] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-12-11 18:09:50.571 EET [6784] LOG:  redo starts at 0/175F118
+2021-12-11 18:09:50.571 EET [6784] LOG:  invalid record length at 0/175F200: wanted 24, got 0
+2021-12-11 18:09:50.571 EET [6784] LOG:  redo done at 0/175F1C8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2021-12-11 18:09:51.059 EET [17972] LOG:  database system is ready to accept connections

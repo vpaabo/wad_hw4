@@ -1,0 +1,12 @@
+2021-12-10 19:02:08.447 EET [9432] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-10 19:02:08.449 EET [9432] LOG:  listening on IPv6 address "::", port 5432
+2021-12-10 19:02:08.449 EET [9432] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-10 19:02:08.458 EET [9432] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:02:08.566 EET [19348] LOG:  database system was interrupted; last known up at 2021-12-09 15:57:19 EET
+2021-12-10 19:02:08.567 EET [19348] LOG:  creating missing WAL directory "pg_wal/archive_status"
+2021-12-10 19:02:09.523 EET [19348] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:02:09.531 EET [19348] LOG:  could not open directory "pg_tblspc": No such file or directory
+2021-12-10 19:02:09.531 EET [19348] FATAL:  could not open directory "pg_replslot": No such file or directory
+2021-12-10 19:02:09.567 EET [9432] LOG:  startup process (PID 19348) exited with exit code 1
+2021-12-10 19:02:09.567 EET [9432] LOG:  aborting startup due to startup process failure
+2021-12-10 19:02:09.571 EET [9432] LOG:  database system is shut down

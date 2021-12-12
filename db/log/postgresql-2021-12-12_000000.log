@@ -1,0 +1,5 @@
+2021-12-12 13:13:11.946 EET [17972] LOG:  received fast shutdown request
+2021-12-12 13:13:11.953 EET [17972] LOG:  aborting any active transactions
+2021-12-12 13:13:11.972 EET [17972] LOG:  background worker "logical replication launcher" (PID 13952) exited with exit code 1
+2021-12-12 13:13:11.997 EET [3960] LOG:  shutting down
+2021-12-12 13:13:12.059 EET [17972] LOG:  database system is shut down
