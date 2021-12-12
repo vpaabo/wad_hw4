@@ -13,12 +13,12 @@ app.listen(3000, () => {
     console.log("Server is listening to port 3000")
 });
 app.get('/', (req, res) => {
-    res.render('index',{title: 'Welcome to our page'});
+    res.render('index', { title: 'Welcome to our page' });
 });
 app.get('/addnewpost', (req, res) => {
     res.render('addnewpost');
 });
-app.get('/posts', async(req, res) => {
+app.get('/posts', async (req, res) => {
     try {
         console.log("get posts request has arrived");
         const posts = await pool.query(
@@ -31,7 +31,7 @@ app.get('/posts', async(req, res) => {
         console.error(err.message);
     }
 });
-app.get('/singlepost/:id', async(req, res) => {
+app.get('/singlepost/:id', async (req, res) => {
     try {
         const id = req.params.id;
         console.log(req.params.id);
@@ -44,7 +44,7 @@ app.get('/singlepost/:id', async(req, res) => {
         console.error(err.message);
     }
 });
-app.get('/posts/:id', async(req, res) => {
+app.get('/posts/:id', async (req, res) => {
     try {
         const { id } = req.params;
         console.log("get a post request has arrived");
@@ -56,7 +56,7 @@ app.get('/posts/:id', async(req, res) => {
         console.error(err.message);
     }
 });
-app.delete('/posts/:id', async(req, res) => {
+app.delete('/posts/:id', async (req, res) => {
     try {
         console.log(req.params);
         const { id } = req.params;
@@ -70,14 +70,14 @@ app.delete('/posts/:id', async(req, res) => {
         console.error(err.message);
     }
 });
-app.post('/posts', async(req, res) => {
+app.post('/posts', async (req, res) => {
     try {
         const post = req.body;
         console.log(post);
         const newpost = await pool.query(
             "INSERT INTO public.posts(id,caption,username,postcontent,likes,timestamp) VALUES (DEFAULT, $1, $2, $3, $4,$5) RETURNING*",
             [post.id, post.caption, post.username, post.postcontent, post.like, post.timestamp]
-    );
+        );
         res.redirect('posts');
     } catch (err) {
         console.error(err.message)
@@ -87,5 +87,5 @@ app.get('/create', (req, res) => {
     res.render('create');
 });
 app.use((req, res) => {
-    res.status(404).render('404',{title: 'This page does not exist'});
+    res.status(404).render('404', { title: 'This page does not exist' });
 });

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,34 +7,36 @@
     <link rel="stylesheet" href="/style.css">
     <title>Posts page</title>
 </head>
+
 <body>
     <%- include('./partials/header.ejs') %>
-    <h2>All posts</h2>
-    <div class="posts list">
-    
-    <% if (posts.length > 0) { %>
-        <% posts.forEach(post => { %>
-            <div class="singlepost">
-                <span>
-                    <%= post.username %>
-                </span><br>
-                
-                <a href="/singlepost/<%= post.id %>">
-                    <% if (posts.postcontent !== 'undefined') { %>
-                        <img alt="" src= <%= post.postcontent %> />
-                    <% } %>
-                    <h3 class="caption">
-                        <%= post.caption %>
-                    </h3>
-                </a>
-            </div>
-        <% }) %>
-    <% } else { %>
-        <p>You did not post anything...</p>
-    <% } %>
-    </div>
-    <%- include('./partials/footer.ejs') %>
+        <h2>All posts</h2>
+        <div class="posts list">
+
+            <% if (posts.length> 0) { %>
+                <% posts.forEach(post=> { %>
+                    <div class="singlepost">
+                        <span>
+                            <%= post.username %>
+                        </span><br>
+
+                        <a href="/singlepost/<%= post.id %>">
+                            <% if (posts.postcontent !=='undefined' ) { %>
+                                <img alt="" src=<%=post.postcontent %> />
+                                <% } %>
+                                    <h3 class="caption">
+                                        <%= post.caption %>
+                                    </h3>
+                        </a>
+                    </div>
+                    <% }) %>
+                        <% } else { %>
+                            <p>You did not post anything...</p>
+                            <% } %>
+        </div>
+        <%- include('./partials/footer.ejs') %>
 </body>
+
 </html>
 <style scoped lang="scss">
     body {
@@ -58,12 +61,12 @@
         border-radius: 8px;
     }
 
-    .timestamp{
+    .timestamp {
         float: right;
         margin: 15px;
     }
 
-    .prof-icon{
+    .prof-icon {
         width: 40px;
         height: 40px;
         margin: 5px;
@@ -71,13 +74,13 @@
         float: left;
     }
 
-    .caption{
+    .caption {
         margin: 5px;
         font-weight: normal;
         font-size: large;
     }
 
-    .content-img{
+    .content-img {
         display: block;
         width: 500px;
     }

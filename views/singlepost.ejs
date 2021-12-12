@@ -15,13 +15,13 @@
                 <%= posts.username %>
             </span><br>
             <div>
-                <% if (posts.postcontent !== 'undefined') { %>
-                    <img alt="" src= <%= posts.postcontent %> />
-                <% } %>
-                <h3 class="caption">
-                    <%= posts.caption %>
-                </h3>
-                <a class="delete" data-del="<%= posts.id %>">Delete</a>
+                <% if (posts.postcontent !=='undefined' ) { %>
+                    <img alt="" src=<%=posts.postcontent %> />
+                    <% } %>
+                        <h3 class="caption">
+                            <%= posts.caption %>
+                        </h3>
+                        <a class="delete" data-del="<%= posts.id %>">Delete</a>
             </div>
         </div>
         <script>
@@ -45,6 +45,7 @@
         width: 80%;
         margin: 30px auto;
     }
+
     a:hover {
         background-color: blue;
     }
@@ -59,12 +60,12 @@
         border-radius: 8px;
     }
 
-    .timestamp{
+    .timestamp {
         float: right;
         margin: 15px;
     }
 
-    .prof-icon{
+    .prof-icon {
         width: 40px;
         height: 40px;
         margin: 5px;
@@ -72,16 +73,17 @@
         float: left;
     }
 
-    .caption{
+    .caption {
         margin: 5px;
         font-weight: normal;
         font-size: large;
     }
 
-    .content-img{
+    .content-img {
         display: block;
         width: 500px;
     }
+
     body {
         background-color: #466bcf;
     }
