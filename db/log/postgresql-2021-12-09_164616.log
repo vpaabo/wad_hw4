@@ -1,0 +1,11 @@
+2021-12-09 16:46:16.557 EET [7680] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-09 16:46:16.559 EET [7680] LOG:  listening on IPv6 address "::", port 5432
+2021-12-09 16:46:16.559 EET [7680] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-09 16:46:16.675 EET [13996] LOG:  database system was shut down at 2021-12-09 16:46:09 EET
+2021-12-09 16:46:16.868 EET [7680] LOG:  database system is ready to accept connections
+2021-12-09 17:20:18.006 EET [7680] LOG:  received fast shutdown request
+2021-12-09 17:20:18.013 EET [7680] LOG:  aborting any active transactions
+2021-12-09 17:20:18.057 EET [15952] FATAL:  terminating autovacuum process due to administrator command
+2021-12-09 17:20:18.065 EET [7680] LOG:  background worker "logical replication launcher" (PID 8760) exited with exit code 1
+2021-12-09 17:20:18.077 EET [8852] LOG:  shutting down
+2021-12-09 17:20:18.162 EET [7680] LOG:  database system is shut down

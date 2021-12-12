@@ -1,0 +1,11 @@
+2021-12-09 19:05:35.904 EET [9960] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-09 19:05:35.906 EET [9960] LOG:  listening on IPv6 address "::", port 5432
+2021-12-09 19:05:35.906 EET [9960] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-09 19:05:36.078 EET [16700] LOG:  database system was shut down at 2021-12-09 19:05:34 EET
+2021-12-09 19:05:36.295 EET [9960] LOG:  database system is ready to accept connections
+2021-12-09 19:05:56.893 EET [720] FATAL:  database "posts" does not exist
+2021-12-09 19:11:29.557 EET [9960] LOG:  received fast shutdown request
+2021-12-09 19:11:29.567 EET [9960] LOG:  aborting any active transactions
+2021-12-09 19:11:29.575 EET [9960] LOG:  background worker "logical replication launcher" (PID 6328) exited with exit code 1
+2021-12-09 19:11:29.601 EET [7024] LOG:  shutting down
+2021-12-09 19:11:29.663 EET [9960] LOG:  database system is shut down

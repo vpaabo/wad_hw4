@@ -1,0 +1,33 @@
+2021-12-09 17:42:49.118 EET [12072] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-09 17:42:49.120 EET [12072] LOG:  listening on IPv6 address "::", port 5432
+2021-12-09 17:42:49.120 EET [12072] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-09 17:42:49.219 EET [6124] LOG:  database system was shut down at 2021-12-09 17:20:18 EET
+2021-12-09 17:42:49.409 EET [12072] LOG:  database system is ready to accept connections
+2021-12-09 17:46:18.792 EET [11336] FATAL:  password authentication failed for user "meek"
+2021-12-09 17:46:18.792 EET [11336] DETAIL:  Role "meek" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 17:46:25.381 EET [11068] FATAL:  password authentication failed for user "meek"
+2021-12-09 17:46:25.381 EET [11068] DETAIL:  Role "meek" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 17:46:33.463 EET [9348] FATAL:  password authentication failed for user "meek"
+2021-12-09 17:46:33.463 EET [9348] DETAIL:  Role "meek" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 17:46:36.714 EET [16836] FATAL:  password authentication failed for user "meek"
+2021-12-09 17:46:36.714 EET [16836] DETAIL:  Role "meek" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 17:47:01.520 EET [6816] FATAL:  password authentication failed for user "postgres"
+2021-12-09 17:47:01.520 EET [6816] DETAIL:  Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 18:16:13.453 EET [15140] FATAL:  database "posts" does not exist
+2021-12-09 18:27:51.919 EET [5112] FATAL:  password authentication failed for user "meek"
+2021-12-09 18:27:51.919 EET [5112] DETAIL:  Role "meek" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 18:27:57.319 EET [5864] FATAL:  password authentication failed for user "meek"
+2021-12-09 18:27:57.319 EET [5864] DETAIL:  Role "meek" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2021-12-09 18:52:31.239 EET [3644] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-09 19:05:34.049 EET [12072] LOG:  received fast shutdown request
+2021-12-09 19:05:34.055 EET [12072] LOG:  aborting any active transactions
+2021-12-09 19:05:34.085 EET [12072] LOG:  background worker "logical replication launcher" (PID 9556) exited with exit code 1
+2021-12-09 19:05:34.098 EET [14276] LOG:  shutting down
+2021-12-09 19:05:34.179 EET [12072] LOG:  database system is shut down

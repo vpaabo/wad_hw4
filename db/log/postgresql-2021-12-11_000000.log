@@ -1,5 +1,0 @@
-2021-12-11 18:09:15.073 EET [7076] LOG:  could not open file "postmaster.pid": No such file or directory
-2021-12-11 18:09:15.074 EET [7076] LOG:  performing immediate shutdown because data directory lock file is invalid
-2021-12-11 18:09:15.075 EET [7076] LOG:  received immediate shutdown request
-2021-12-11 18:09:15.075 EET [7076] LOG:  could not open file "postmaster.pid": No such file or directory
-2021-12-11 18:09:15.182 EET [7076] LOG:  database system is shut down

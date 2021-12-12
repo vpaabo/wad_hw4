@@ -1,0 +1,11 @@
+2021-12-12 14:13:22.947 EET [20040] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-12 14:13:22.972 EET [20040] LOG:  listening on IPv6 address "::1", port 5432
+2021-12-12 14:13:22.972 EET [20040] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-12-12 14:13:23.101 EET [7008] LOG:  database system was shut down at 2021-12-12 13:55:58 EET
+2021-12-12 14:13:23.103 EET [7008] LOG:  invalid record length at 0/175F448: wanted 24, got 0
+2021-12-12 14:13:23.103 EET [7008] LOG:  invalid primary checkpoint record
+2021-12-12 14:13:23.103 EET [7008] PANIC:  could not locate a valid checkpoint record
+2021-12-12 14:13:23.290 EET [20040] LOG:  startup process (PID 7008) was terminated by exception 0xC0000409
+2021-12-12 14:13:23.290 EET [20040] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-12-12 14:13:23.290 EET [20040] LOG:  aborting startup due to startup process failure
+2021-12-12 14:13:23.294 EET [20040] LOG:  database system is shut down
