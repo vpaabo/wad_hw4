@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <%- include('./partials/header.ejs') %>
+    <header>
+        <%- include('./partials/header.ejs') %>
+    </header>
         <div class="singlepost">
             <span>
                 <%= posts.username %>
@@ -33,7 +35,9 @@
                 }).then(window.location.href = '/posts')
             });
         </script>
-        <%- include('./partials/footer.ejs') %>
+        <footer>
+            <%- include('./partials/footer.ejs') %>
+        </footer>
 </body>
 
 </html>

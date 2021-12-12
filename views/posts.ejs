@@ -9,32 +9,36 @@
 </head>
 
 <body>
-    <%- include('./partials/header.ejs') %>
-        <h2>All posts</h2>
-        <div class="posts list">
+        <%- include('./partials/header.ejs') %>
 
-            <% if (posts.length> 0) { %>
-                <% posts.forEach(post=> { %>
-                    <div class="singlepost">
-                        <span>
-                            <%= post.username %>
-                        </span><br>
+    <h2>All posts</h2>
+    <div class="posts list">
 
-                        <a href="/singlepost/<%= post.id %>">
-                            <% if (posts.postcontent !=='undefined' ) { %>
-                                <img alt="" src=<%=post.postcontent %> />
-                                <% } %>
-                                    <h3 class="caption">
-                                        <%= post.caption %>
-                                    </h3>
-                        </a>
-                    </div>
-                    <% }) %>
-                        <% } else { %>
-                            <p>You did not post anything...</p>
+        <% if (posts.length> 0) { %>
+            <% posts.forEach(post=> { %>
+                <div class="singlepost">
+                    <span>
+                        <%= post.username %>
+                    </span><br>
+
+                    <a href="/singlepost/<%= post.id %>">
+                        <% if (posts.postcontent !=='undefined' ) { %>
+                            <img alt="" src=<%=post.postcontent %> />
                             <% } %>
-        </div>
+                                <h3 class="caption">
+                                    <%= post.caption %>
+                                </h3>
+                    </a>
+                </div>
+                <% }) %>
+                    <% } else { %>
+                        <p>You did not post anything...</p>
+                        <% } %>
+    </div>
+    
         <%- include('./partials/footer.ejs') %>
+    
+        
 </body>
 
 </html>
@@ -42,7 +46,6 @@
     body {
         background-color: #466bcf;
     }
-
     section {
         display: flex;
         flex-direction: column;
@@ -84,4 +87,5 @@
         display: block;
         width: 500px;
     }
+
 </style>

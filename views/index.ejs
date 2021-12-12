@@ -7,15 +7,22 @@ app.get('/', (req, res) => {
 <body>
     <%- include('./partials/header.ejs') %>
 
+
         <h1>
             <%= title %>
         </h1>
 
-        <%- include('./partials/footer.ejs') %>
+       
+            <%- include('./partials/footer.ejs') %>
+        
 </body>
 
 <style>
     body {
         background-color: #466bcf;
+    }
+    h1 {
+        position: relative;
+        left: 38%;
     }
 </style>
